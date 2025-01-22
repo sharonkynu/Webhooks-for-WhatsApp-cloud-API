@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  webhook:
+    image: webhook-in-nodejs:latest
+    ports:
+      - "3005:3005"
+    environment:
+      - MYTOKEN=SHARON
+      - TOKEN=EAAWBFILrd6kBO22p9T4OPkOIedoGOJNsj4PO1hfKlr7nn0DQmSPNN7dzwOZBrOxOyTvwGShui6WMqZA22mz5OgGm88X1Ds4kYywZB6UeulnUZAw6aIRamhFS1KirVqguZBdj6MTkpmGSas3KpZBkpZA2SvKKsH6pqjJGUZACIhcXdIBJQpmh1Ij3wIfHzx4NfVZAB7wZDZD
+
+    container_name: whatsapp-webhook
+    restart: always
+
+
+
+
